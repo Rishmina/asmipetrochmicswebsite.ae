@@ -16,6 +16,28 @@ export default function HeroSlider() {
     setIsMounted(true);
   }, []);
 
+  // Handle video play when slide becomes active
+  const handleSlideChange = (swiper: any) => {
+    const activeSlide = swiper.slides[swiper.activeIndex];
+    const video = activeSlide.querySelector('video');
+    if (video) {
+      video.currentTime = 0;
+      video.play().catch((error: any) => {
+        console.log('Video autoplay failed:', error);
+      });
+    }
+    
+    // Pause videos in other slides
+    swiper.slides.forEach((slide: any, index: number) => {
+      if (index !== swiper.activeIndex) {
+        const otherVideo = slide.querySelector('video');
+        if (otherVideo) {
+          otherVideo.pause();
+        }
+      }
+    });
+  };
+
   // Don't render anything until component is mounted on client
   if (!isMounted) {
     return <div className="h-screen bg-gray-200 animate-pulse"></div>;
@@ -36,6 +58,7 @@ export default function HeroSlider() {
         }}
         loop={true}
         className="h-full"
+        onSlideChange={handleSlideChange}
       >
         {/* Slide 1 - Industry Overview */}
         <SwiperSlide>
@@ -108,7 +131,7 @@ export default function HeroSlider() {
                 <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
                   <h2 className="text-4xl font-bold mb-4">RPO Oil</h2>
                   <p className="text-lg mb-4">Rubber Process Oil for tire and rubber manufacturing industries</p>
-                  <div className="flex items-center text-[#DAA520] group-hover:text-[#FFD700]">
+                  <div className="flex items-center text-[#FFD700] group-hover:text-[#FFD700]">
                     <span className="mr-2">Explore RPO Oils</span>
                     <i className="ri-arrow-right-line"></i>
                   </div>
@@ -117,6 +140,8 @@ export default function HeroSlider() {
             </div>
           </div>
         </SwiperSlide>
+
+        
       </Swiper>
 
       {/* Custom Swiper Styles */}
@@ -138,6 +163,25 @@ export default function HeroSlider() {
         .text-shadow-lg {
           text-shadow: 3px 3px 6px rgba(0,0,0,0.7), 1px 1px 3px rgba(0,0,0,0.8);
         }
+        
+        /* Video slide specific styles */
+        .swiper-slide video {
+          width: 100% !important;
+          height: 100% !important;
+          object-fit: cover !important;
+          position: absolute !important;
+          top: 0 !important;
+          left: 0 !important;
+          right: 0 !important;
+          bottom: 0 !important;
+        }
+        
+        .swiper-slide {
+          width: 100% !important;
+          height: 100% !important;
+        }
+        
+
       `}</style>
     </section>
   );

@@ -10,44 +10,60 @@ export default function ProductsSection() {
     <section id="products" className="py-20 bg-white w-full">
       <div className="w-full px-4 sm:px-6 lg:px-2">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Premium Products</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Premium Product Portfolio</h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Comprehensive range of high-quality petroleum products designed for diverse industrial applications.
+            Extensive collection of superior-grade petroleum derivatives engineered for multifaceted industrial and commercial applications across diverse sectors.
           </p>
         </div>
 
         {/* Base Oil Section */}
         <div id="base-oil" className="mb-20">
-          <h3 className="text-3xl font-bold text-center mb-12 text-gray-900">Base Oil Products</h3>
+          <h3 className="text-3xl font-bold text-center mb-12 text-gray-900">Base Oil Formulations</h3>
 
           {/* Base Oil Introduction */}
           <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-8 mb-12 w-full">
-            <h4 className="text-2xl font-bold text-[#DAA520] mb-6 text-center">About Base Oil</h4>
+            <h4 className="text-2xl font-bold text-[#DAA520] mb-6 text-center">Base Oil Fundamentals</h4>
             
-            {/* Image First */}
-            <div className="flex justify-center mb-8">
-                              <div className="max-w-2xl">
-                  <img
-                    src="/images/baseoilone.jpeg"
-                    alt="About Base Oil"
-                    className="w-full h-80 object-cover object-top rounded-xl shadow-lg hover:scale-105 transition-all duration-500"
-                  />
-                </div>
+            {/* Image and Video Side by Side */}
+            <div className="flex justify-center gap-4 mb-8">
+              {/* Image */}
+              <div className="bg-white/90 backdrop-blur-sm rounded-lg p-4 shadow-lg w-80">
+                <img
+                  src="/images/baseoilone.jpeg"
+                  alt="About Base Oil"
+                  className="w-full h-56 object-cover rounded-lg mb-3"
+                />
+                  <p className="text-gray-800 text-center font-semibold text-sm drop-shadow-sm">Base Oil Manufacturing Process</p>
+              </div>
+              
+              {/* Video */}
+              <div className="bg-white/90 backdrop-blur-sm rounded-lg p-4 shadow-lg w-80">
+                <video
+                  src="/videos/]baseoilvdo.mp4"
+                  className="w-full h-56 object-cover rounded-lg mb-3"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  controls={false}
+                />
+                  <p className="text-gray-800 text-center font-semibold text-sm drop-shadow-sm">Base Oil Production Demonstration</p>
+              </div>
             </div>
 
             {/* Content Below Image */}
             <div className="text-center w-full max-w-6xl mx-auto">
               <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed mb-8">
                 <p className="mb-4">
-                  Base oil is the primary component of lubricants and is derived from refining crude oil or through chemical synthesis. It serves as the foundation for engine oils, industrial lubricants, and other specialty fluids. Base oils make up around 70-90% of the final lubricant formulation, with the remaining portion consisting of performance-enhancing additives.
+                  Base oil represents the fundamental building block of all lubricant formulations, constituting 70-95% of the final product composition. Engineered through advanced refining processes or sophisticated chemical synthesis, base oils provide the essential viscosity, thermal stability, and lubricating properties that define performance across diverse industrial and automotive applications.
                 </p>
                 <p className="mb-6">
-                  On the basis of the refining method and key base oil properties such as viscosity, amount of saturates and Sulphur content, the American Petroleum Institute (API) has classified base oils into five major groups – Group I, II, III, IV and V.
+                  The American Petroleum Institute (API) has established a comprehensive classification system that categorizes base oils into five distinct groups based on critical performance parameters including refining methodology, saturate content, sulfur concentration, and viscosity index. This standardized classification ensures precise selection and optimal performance across all applications.
                 </p>
               </div>
 
               <div>
-                <h5 className="text-xl font-bold text-gray-900 mb-4">TYPES OF BASE OIL</h5>
+                <h5 className="text-xl font-bold text-gray-900 mb-4">BASE OIL CLASSIFICATION SYSTEM</h5>
                 <div className="mb-6">
                   <img
                     src="/images/gorups.jpg"
@@ -57,19 +73,41 @@ export default function ProductsSection() {
                 </div>
                 <div className="space-y-3">
                   <div className="bg-white p-4 rounded-lg shadow-sm">
-                    <p><strong>1. Group I Base Oils:</strong> These traditional, solvent-refined oils are ideal for general-purpose applications and cost-sensitive solutions.</p>
+                    <p><strong>Group I Base Oils:</strong> Traditional solvent-refined formulations engineered for cost-effective general-purpose applications, delivering reliable performance in standard operating conditions with proven track records across multiple industries.</p>
                   </div>
                   <div className="bg-white p-4 rounded-lg shadow-sm">
-                    <p><strong>2. Group II Base Oils:</strong> Known for their higher purity and oxidation stability, these oils are widely used in automotive lubricants and industrial fluids.</p>
+                    <p><strong>Group II Base Oils:</strong> Advanced hydroprocessed formulations featuring superior purity levels and enhanced oxidation stability, specifically engineered for modern automotive systems and demanding industrial applications requiring extended service intervals.</p>
                   </div>
                   <div className="bg-white p-4 rounded-lg shadow-sm">
-                    <p><strong>3. Group III Base Oils:</strong> Often categorized as synthetic-grade oils, they provide excellent thermal stability and performance in high-temperature environments.</p>
+                    <p><strong>Group III Base Oils:</strong> Premium severely hydrocracked formulations delivering synthetic-grade performance characteristics, engineered for high-temperature environments and applications demanding exceptional thermal stability and extended drain intervals.</p>
                   </div>
                   <div className="bg-white p-4 rounded-lg shadow-sm">
-                    <p><strong>4. Synthetic Oils (Group IV and V):</strong> Offering unmatched performance, these oils cater to specialized applications such as aviation, high-performance engines, and extreme operating conditions.</p>
+                    <p><strong>Synthetic Base Oils (Group IV & V):</strong> Cutting-edge formulations including Polyalphaolefins (PAO) and specialized synthetic compounds, engineered for extreme operating conditions, aviation applications, and high-performance systems requiring uncompromising reliability and performance.</p>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/* Virgin Oil Gallery */}
+          <div className="mb-12 w-full">
+            <h4 className="text-2xl font-bold text-[#DAA520] mb-8 text-center">Premium Base Oil Specifications</h4>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
+              <img
+                src="/images/virginphoto.jpeg"
+                alt="Premium Base Oil SN 150"
+                className="w-full h-96 object-contain hover:scale-110 hover:z-10 transition-all duration-300 ease-in-out cursor-pointer"
+              />
+              <img
+                src="/images/virginreal.jpeg"
+                alt="Premium Base Oil SN 300"
+                className="w-full h-96 object-contain hover:scale-110 hover:z-10 transition-all duration-300 ease-in-out cursor-pointer"
+              />
+              <img
+                src="/images/virginreal3.jpeg"
+                alt="Premium Base Oil SN 500"
+                className="w-full h-96 object-contain hover:scale-110 hover:z-10 transition-all duration-300 ease-in-out cursor-pointer"
+              />
             </div>
           </div>
 
@@ -77,19 +115,19 @@ export default function ProductsSection() {
           <div className="bg-gray-100 rounded-2xl p-8 shadow-md mb-12 w-full">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div>
-                <h4 className="text-2xl font-bold text-[#DAA520] mb-4">What is Base Oil SN 500?</h4>
+                <h4 className="text-2xl font-bold text-[#DAA520] mb-4">Base Oil SN 500 Specifications</h4>
                 <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                  Base oil SN 500 is a type of mineral oil that is commonly used as a lubricant in various industrial and automotive applications. It is a heavier grade than SN 150 and SN 300 base oils, with a higher viscosity and thicker consistency. SN 500 base oil is produced by the refining of crude oil through a process known as solvent refining, which involves the use of solvents to remove impurities and improve the oil&apos;s properties.
+                  Base Oil SN 500 represents a premium-grade mineral oil formulation extensively utilized across diverse industrial and automotive applications. Distinguished by its superior viscosity characteristics compared to SN 150 and SN 300 formulations, this heavy-grade base oil delivers enhanced lubricating properties and exceptional consistency. SN 500 is manufactured through advanced solvent refining processes, employing sophisticated purification techniques to eliminate contaminants and optimize performance characteristics.
                 </p>
 
-                <h5 className="text-lg font-bold text-gray-900 mb-3">Usages of Base Oil SN 500</h5>
+                <h5 className="text-lg font-bold text-gray-900 mb-3">Application Specifications</h5>
                 <p className="text-gray-700 mb-4">
-                  Base Oil SN 500 is a light grade base oil that is the most widely used. It has viscosity 10,1-11 cSt at 100C and 94-98 cSt at 40C.
+                  Base Oil SN 500 constitutes a versatile light-grade formulation with extensive industrial adoption. Technical specifications include kinematic viscosity of 10.1-11 cSt at 100°C and 94-98 cSt at 40°C, ensuring optimal performance across diverse operating conditions.
                 </p>
                 <ul className="text-gray-700 mb-6">
                   <li className="flex items-start mb-2">
                     <i className="ri-check-line text-[#DAA520] mt-1 mr-3 w-4 h-4 flex items-center justify-center"></i>
-                    <span>General-purpose applications</span>
+                    <span>Versatile industrial applications</span>
                   </li>
                 </ul>
 
@@ -141,9 +179,9 @@ export default function ProductsSection() {
                     </div>
                     <h5 className="text-3xl font-bold text-gray-900">GROUP I Base Oil</h5>
                   </div>
-                  <h6 className="text-xl font-semibold text-[#DAA520] mb-4">Conventional Base Oil</h6>
+                  <h6 className="text-xl font-semibold text-[#DAA520] mb-4">Conventional Base Oil Formulation</h6>
                   <p className="text-gray-700 text-lg leading-relaxed mb-8">
-                    These traditional, solvent-refined oils are ideal for general-purpose applications and cost-sensitive solutions. Group I base oils are the most commonly used type worldwide, offering reliable performance for basic industrial and automotive lubricant formulations.
+                    These traditional, solvent-refined formulations represent the cornerstone of industrial lubrication, engineered for cost-effective general-purpose applications and economically viable solutions. Group I base oils constitute the most extensively utilized category globally, delivering dependable performance characteristics for fundamental industrial and automotive lubricant compositions.
                   </p>
                   <div className="grid grid-cols-2 gap-4">
                     <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
@@ -160,7 +198,7 @@ export default function ProductsSection() {
                     </div>
                     <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
                       <span className="font-semibold text-gray-900">Applications:</span>
-                      <span className="ml-2 text-gray-700">General Purpose</span>
+                      <span className="ml-2 text-gray-700">Versatile Applications</span>
                     </div>
                   </div>
                 </div>
@@ -184,9 +222,9 @@ export default function ProductsSection() {
                     </div>
                     <h5 className="text-3xl font-bold text-gray-900">GROUP II Base Oil</h5>
                   </div>
-                  <h6 className="text-xl font-semibold text-[#DAA520] mb-4">Hydroprocessed Oil</h6>
+                  <h6 className="text-xl font-semibold text-[#DAA520] mb-4">Hydroprocessed Formulation</h6>
                   <p className="text-gray-700 text-lg leading-relaxed mb-8">
-                    Known for their higher purity and oxidation stability, these oils are widely used in automotive lubricants and industrial fluids. Group II base oils offer improved performance characteristics through advanced hydroprocessing technology.
+                    Distinguished by superior purity levels and exceptional oxidation stability, these formulations are extensively employed in automotive lubricants and industrial fluid applications. Group II base oils deliver enhanced performance characteristics through sophisticated hydroprocessing technology and advanced refining methodologies.
                   </p>
                   <div className="grid grid-cols-2 gap-4">
                     <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
@@ -203,7 +241,7 @@ export default function ProductsSection() {
                     </div>
                     <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
                       <span className="font-semibold text-gray-900">Applications:</span>
-                      <span className="ml-2 text-gray-700">Automotive</span>
+                      <span className="ml-2 text-gray-700">Automotive Systems</span>
                     </div>
                   </div>
                 </div>
@@ -227,9 +265,9 @@ export default function ProductsSection() {
                     </div>
                     <h5 className="text-3xl font-bold text-gray-900">GROUP III Base Oil</h5>
                   </div>
-                  <h6 className="text-xl font-semibold text-[#DAA520] mb-4">Synthetic-Grade Oil</h6>
+                  <h6 className="text-xl font-semibold text-[#DAA520] mb-4">Synthetic-Grade Formulation</h6>
                   <p className="text-gray-700 text-lg leading-relaxed mb-8">
-                    Often categorized as synthetic-grade oils, they provide excellent thermal stability and performance in high-temperature environments. These oils undergo severe hydrocracking to achieve superior quality characteristics.
+                    Frequently classified as synthetic-grade formulations, these oils deliver exceptional thermal stability and superior performance characteristics in elevated temperature environments. These formulations undergo severe hydrocracking processes to achieve premium quality specifications and enhanced performance attributes.
                   </p>
                   <div className="grid grid-cols-2 gap-4">
                     <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
@@ -246,7 +284,7 @@ export default function ProductsSection() {
                     </div>
                     <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
                       <span className="font-semibold text-gray-900">Applications:</span>
-                      <span className="ml-2 text-gray-700">High Performance</span>
+                      <span className="ml-2 text-gray-700">High-Performance Systems</span>
                     </div>
                   </div>
                 </div>
@@ -270,26 +308,26 @@ export default function ProductsSection() {
                     </div>
                     <h5 className="text-3xl font-bold text-gray-900">GROUP IV & V Base Oil</h5>
                   </div>
-                  <h6 className="text-xl font-semibold text-[#DAA520] mb-4">Full Synthetic (PAO & Others)</h6>
+                  <h6 className="text-xl font-semibold text-[#DAA520] mb-4">Full Synthetic Formulations (PAO & Specialized Compounds)</h6>
                   <p className="text-gray-700 text-lg leading-relaxed mb-8">
-                    Offering unmatched performance, these oils cater to specialized applications such as aviation, high-performance engines, and extreme operating conditions. Group IV includes PAO (Polyalphaolefin) while Group V covers all other synthetic base stocks.
+                    Delivering unparalleled performance characteristics, these formulations are engineered for specialized applications including aviation systems, high-performance engines, and extreme operating conditions. Group IV encompasses PAO (Polyalphaolefin) formulations while Group V incorporates all other synthetic base stock derivatives and specialized compounds.
                   </p>
                   <div className="grid grid-cols-2 gap-4">
                     <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
                       <span className="font-semibold text-gray-900">Type:</span>
-                      <span className="ml-2 text-purple-600 font-bold">PAO & Synthetic</span>
+                      <span className="ml-2 text-purple-600 font-bold">PAO & Synthetic Compounds</span>
                     </div>
                     <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
                       <span className="font-semibold text-gray-900">Performance:</span>
-                      <span className="ml-2 text-purple-600 font-bold">Premium</span>
+                      <span className="ml-2 text-purple-600 font-bold">Premium-Grade</span>
                     </div>
                     <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
                       <span className="font-semibold text-gray-900">Temperature Range:</span>
-                      <span className="ml-2 text-purple-600 font-bold">Extreme</span>
+                      <span className="ml-2 text-purple-600 font-bold">Extreme Conditions</span>
                     </div>
                     <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
                       <span className="font-semibold text-gray-900">Applications:</span>
-                      <span className="ml-2 text-gray-700">Specialized</span>
+                      <span className="ml-2 text-gray-700">Specialized Applications</span>
                     </div>
                   </div>
                 </div>
@@ -300,30 +338,35 @@ export default function ProductsSection() {
 
         {/* RPO Oil Section */}
         <div id="rpo-oil" className="mb-20">
-          <h3 className="text-3xl font-bold text-center mb-12 text-gray-900">RPO (Rubber Process Oil)</h3>
+          <h3 className="text-3xl font-bold text-center mb-12 text-gray-900">Rubber Process Oil (RPO) Formulations</h3>
 
           {/* RPO Introduction */}
           <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-16 mb-12">
-            <h4 className="text-2xl font-bold text-[#DAA520] mb-6 text-center">WHAT IS RPO</h4>
+            <h4 className="text-2xl font-bold text-[#DAA520] mb-6 text-center">RUBBER PROCESS OIL FUNDAMENTALS</h4>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-start mb-8">
               <div className="text-gray-700 leading-relaxed">
                 <p className="mb-4 text-lg">
-                  Rubber Process Oil is a highly specialized formulation used in the rubber manufacturing industry to improve processability, optimize elasticity, and enhance the physical properties of rubber compounds. It plays a vital role in both cost efficiency and product performance across a wide range of applications—from simple rubber bands to heavy-duty tires for industrial machinery.
+                  Rubber Process Oil represents a highly sophisticated formulation engineered for the rubber manufacturing industry to enhance processability, optimize elasticity characteristics, and elevate the physical properties of rubber compounds. This specialized oil plays a critical role in achieving optimal cost efficiency and superior product performance across diverse applications—from precision rubber components to heavy-duty industrial tire manufacturing.
                 </p>
                 <p className="mb-4 text-lg">
-                  Functioning as both a filler and plasticizer, RPO reduces the viscosity of rubber blends, allowing for easier mixing and shaping while maintaining desired mechanical characteristics. It also helps improve elasticity and reduces manufacturing costs without compromising performance.
+                  Functioning as both a filler and plasticizer, RPO effectively reduces the viscosity of rubber blends, facilitating enhanced mixing and shaping capabilities while preserving desired mechanical characteristics. This formulation significantly improves elasticity properties and reduces manufacturing costs without compromising performance integrity.
                 </p>
                 <p className="mb-4 text-lg">
-                  RPO typically features a kinematic viscosity of 20–50 cSt @ 100°C, depending on the grade (light or heavy), and a flash point around 215°C, with a density near 1.01 SG at 15°C.
+                  RPO formulations typically exhibit kinematic viscosity specifications of 20–50 cSt @ 100°C, varying according to grade classification (light or heavy), with flash point characteristics around 215°C and density specifications near 1.01 SG at 15°C.
                 </p>
                 <p className="mb-4 text-lg">
-                  Modern formulations, like ours, contain reduced levels of polynuclear aromatic (PNA) compounds, making them safer and environmentally friendlier—while remaining fully compatible with aromatic rubber applications.
+                  Contemporary formulations, including our premium offerings, incorporate reduced levels of polynuclear aromatic (PNA) compounds, ensuring enhanced safety profiles and environmental compatibility—while maintaining full compatibility with aromatic rubber applications.
                 </p>
               </div>
-              <div className="flex justify-center items-center">
+              <div className="flex justify-center items-center gap-4">
                 <img
                   src="/images/rpo 3.jpeg"
-                  alt="What is RPO Oil"
+                  alt="Rubber Process Oil Formulation"
+                  className="w-full max-w-sm h-80 object-contain rounded-xl hover:scale-105 transition-all duration-500"
+                />
+                <img
+                  src="/images/rpoimageasmi.jpeg"
+                  alt="RPO Manufacturing Process"
                   className="w-full max-w-sm h-80 object-contain rounded-xl hover:scale-105 transition-all duration-500"
                 />
               </div>
@@ -331,16 +374,16 @@ export default function ProductsSection() {
 
             <div className="text-gray-700 leading-relaxed mb-8">
               <p className="mb-4 text-lg">
-                Rubber compounding relies heavily on RPO alongside rubber polymers, reinforcing fillers, softeners, stabilizers, and processing aids. For over a century, mineral oils—whether paraffinic, naphthenic, or aromatic—have proven essential as softeners and extender oils in rubber formulations.
+                Rubber compounding operations depend extensively on RPO formulations in conjunction with rubber polymers, reinforcing fillers, softeners, stabilizers, and processing aids. For over a century, mineral oils—whether paraffinic, naphthenic, or aromatic—have demonstrated their essential role as softeners and extender oils in sophisticated rubber formulations.
               </p>
               <p className="mb-6 text-lg">
-                At ASMI ENERGY FZE, we offer high-quality Aromatic RPO with optimized viscosity (30–35 cSt @ 40°C), suitable for applications like tire manufacturing, rubber molding, automotive parts, footwear, and even diesel or petroleum blending.
+                At ASMI ENERGY FZE, we deliver premium-grade Aromatic RPO formulations with optimized viscosity specifications (30–35 cSt @ 40°C), engineered for applications including tire manufacturing, rubber molding, automotive components, footwear production, and advanced diesel or petroleum blending operations.
               </p>
             </div>
 
             {/* RPO Applications Section */}
             <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-8 mb-12">
-              <h4 className="text-2xl font-bold text-[#DAA520] mb-8 text-center">APPLICATION OF RPO</h4>
+              <h4 className="text-2xl font-bold text-[#DAA520] mb-8 text-center">RPO INDUSTRIAL APPLICATIONS</h4>
 
               <div className="space-y-16">
                 {/* Oil Blending & Refining */}
@@ -687,207 +730,157 @@ export default function ProductsSection() {
                 </div>
               </div>
 
-              {/* Key Benefits Summary */}
-              <div className="mt-16 bg-gradient-to-br from-[#DAA520] to-[#B8860B] rounded-xl p-8 shadow-lg">
-                <h5 className="text-xl font-bold text-white mb-6 text-center">Key Benefits of RPO</h5>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            </div>
+
+            {/* Green Lithium Grease Manufacturing with RPO */}
+            <div className="relative bg-cover bg-center bg-no-repeat rounded-2xl p-8 mb-8 overflow-hidden" style={{
+              backgroundImage: `url('/images/greasebackgorund.jpg')`
+            }}>
+              {/* Dark overlay for better text readability */}
+              <div className="absolute inset-0 bg-black/70"></div>
+              
+              {/* Content with white text for visibility */}
+              <div className="relative z-10 text-center mb-8">
+                <h4 className="text-2xl font-bold text-white mb-3 drop-shadow-2xl">GREEN LITHIUM GREASE MANUFACTURING WITH RUBBER PROCESS OIL (RPO)</h4>
+                <p className="text-base text-white drop-shadow-lg">Discover how RPO enhances the production of high-performance green lithium grease</p>
+              </div>
+
+                            <div className="grid grid-cols-1 lg:grid-cols-6 gap-8 items-start">
+                <div className="lg:col-span-4">
+                  <h5 className="text-xl font-bold text-white mb-6 drop-shadow-lg">Role of RPO in Grease Manufacturing:</h5>
+                  <ul className="space-y-4 text-white drop-shadow-md">
+                    <li className="flex items-start">
+                      <i className="ri-check-line text-green-400 mt-1 mr-3 w-5 h-5 flex items-center justify-center drop-shadow-md"></i>
+                      <span><strong className="text-green-300">Base Oil Component:</strong> Heavy Aromatic RPO serves as the primary base oil for the grease, giving it viscosity and lubricating properties.</span>
+                    </li>
+                    <li className="flex items-start">
+                      <i className="ri-check-line text-green-400 mt-1 mr-3 w-5 h-5 flex items-center justify-center drop-shadow-md"></i>
+                      <span><strong className="text-green-300">Improved Thickener Dispersion:</strong> RPO helps lithium soap thickeners mix evenly, ensuring a uniform, stable grease structure.</span>
+                    </li>
+                    <li className="flex items-start">
+                      <i className="ri-check-line text-green-400 mt-1 mr-3 w-5 h-5 flex items-center justify-center drop-shadow-md"></i>
+                      <span><strong className="text-green-300">Enhanced Lubricity:</strong> Reduces friction and wear in high-pressure and high-temperature applications.</span>
+                    </li>
+                    <li className="flex items-start">
+                      <i className="ri-check-line text-green-400 mt-1 mr-3 w-5 h-5 flex items-center justify-center drop-shadow-md"></i>
+                      <span><strong className="text-green-300">Cost Optimization:</strong> Aromatic RPO offers a cost-effective alternative to expensive base oils while maintaining performance.</span>
+                    </li>
+                    <li className="flex items-start">
+                      <i className="ri-check-line text-green-400 mt-1 mr-3 w-5 h-5 flex items-center justify-center drop-shadow-md"></i>
+                      <span><strong className="text-green-300">Oxidation Resistance:</strong> The right RPO grade increases grease shelf life by resisting oxidation.</span>
+                    </li>
+                    <li className="flex items-start">
+                      <i className="ri-check-line text-green-300 mt-1 mr-3 w-5 h-5 flex items-center justify-center drop-shadow-md"></i>
+                      <span><strong className="text-green-300">Temperature Tolerance:</strong> Allows grease to work efficiently across a wide temperature range, perfect for automotive and industrial machinery.</span>
+                    </li>
+                    <li className="flex items-start">
+                      <i className="ri-check-line text-green-400 mt-1 mr-3 w-5 h-5 flex items-center justify-center drop-shadow-md"></i>
+                      <span><strong className="text-green-300">Color Blending:</strong> Acts as a carrier for pigments to achieve the distinct green color without affecting lubrication quality.</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="lg:col-span-2 space-y-4">
+                  <div className="bg-white/90 backdrop-blur-sm rounded-lg p-4 shadow-lg w-80">
+                    <video
+                      src="/videos/automativebearing.mp4"
+                      className="w-full h-56 object-cover rounded-lg mb-3"
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      controls={false}
+                    />
+                    <p className="text-gray-800 text-center font-semibold text-sm drop-shadow-sm">Automotive Bearings - Grease Application</p>
+                  </div>
+
+                  <div className="bg-white/90 backdrop-blur-sm rounded-lg p-4 shadow-lg w-80">
+                    <video
+                      src="/videos/machine vdo.mp4"
+                      className="w-full h-56 object-cover rounded-lg mb-3"
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      controls={false}
+                    />
+                    <p className="text-gray-800 text-center font-semibold text-sm drop-shadow-sm">Industrial Machinery - Grease Application</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-8 bg-black/40 backdrop-blur-sm rounded-xl p-6 text-white border border-white/20">
+                <h5 className="text-xl font-bold mb-6 text-center">Applications of RPO-based Lithium Grease:</h5>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                   <div className="text-center">
-                    <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <i className="ri-settings-line text-white text-2xl w-6 h-6 flex items-center justify-center"></i>
-                    </div>
-                    <h6 className="font-semibold text-white mb-2">Processing Aid</h6>
-                    <p className="text-white/90 text-sm">Reduces viscosity for easier processing and molding</p>
+                    <i className="ri-car-line text-3xl text-green-300 mb-3"></i>
+                    <p className="font-semibold">Automotive bearings & chassis lubrication</p>
                   </div>
                   <div className="text-center">
-                    <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <i className="ri-drop-line text-white text-2xl w-6 h-6 flex items-center justify-center"></i>
-                    </div>
-                    <h6 className="font-semibold text-white mb-2">Plasticizer</h6>
-                    <p className="text-white/90 text-sm">Improves flexibility and workability of rubber compounds</p>
+                    <i className="ri-tools-line text-3xl text-green-300 mb-3"></i>
+                    <p className="font-semibold">Industrial machinery</p>
                   </div>
                   <div className="text-center">
-                    <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <i className="ri-bubble-chart-line text-white text-2xl w-6 h-6 flex items-center justify-center"></i>
-                    </div>
-                    <h6 className="font-semibold text-white mb-2">Filler Dispersion</h6>
-                    <p className="text-white/90 text-sm">Enhances distribution of fillers and additives</p>
+                    <i className="ri-plant-line text-3xl text-green-300 mb-3"></i>
+                    <p className="font-semibold">Agriculture equipment</p>
                   </div>
                   <div className="text-center">
-                    <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <i className="ri-water-flash-line text-white text-2xl w-6 h-6 flex items-center justify-center"></i>
-                    </div>
-                    <h6 className="font-semibold text-white mb-2">Softening Agent</h6>
-                    <p className="text-white/90 text-sm">Acts as softener in rubber compound production</p>
-                  </div>
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <i className="ri-flask-line text-white text-2xl w-6 h-6 flex items-center justify-center"></i>
-                    </div>
-                    <h6 className="font-semibold text-white mb-2">Diluent</h6>
-                    <p className="text-white/90 text-sm">Functions as carrier fluid and diluent</p>
-                  </div>
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <i className="ri-oil-line text-white text-2xl w-6 h-6 flex items-center justify-center"></i>
-                    </div>
-                    <h6 className="font-semibold text-white mb-2">Lubricant</h6>
-                    <p className="text-white/90 text-sm">Provides lubrication during rubber processing</p>
+                    <i className="ri-truck-line text-3xl text-green-300 mb-3"></i>
+                    <p className="font-semibold">Mining and heavy-duty machinery</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-              <div className="text-center py-8 bg-gradient-to-r from-gray-50 to-gray-100">
-                <h4 className="text-3xl font-bold text-gray-900 mb-2">Explore the Range of RPO Grades We Offer</h4>
-                <p className="text-lg text-gray-600">Choose from our comprehensive range of specialized rubber process oils</p>
-              </div>
-
-              <div className="border-b border-gray-200">
-                <nav className="flex justify-center">
-                  <button
-                    onClick={() => setActiveRPOTab('aromatic')}
-                    className={`px-6 py-4 font-semibold transition-colors whitespace-nowrap ${
-                      activeRPOTab === 'aromatic'
-                        ? 'text-[#DAA520] border-b-2 border-[#DAA520]'
-                        : 'text-gray-500 hover:text-[#DAA520]'
-                    }`}
-                  >
-                    Aromatic RPO
-                  </button>
-                  <button
-                    onClick={() => setActiveRPOTab('paraffinic')}
-                    className={`px-6 py-4 font-semibold transition-colors whitespace-nowrap ${
-                      activeRPOTab === 'paraffinic'
-                        ? 'text-[#DAA520] border-b-2 border-[#DAA520]'
-                        : 'text-gray-500 hover:text-[#DAA520]'
-                    }`}
-                  >
-                    Paraffinic RPO
-                  </button>
-                  <button
-                    onClick={() => setActiveRPOTab('naphthenic')}
-                    className={`px-6 py-4 font-semibold transition-colors whitespace-nowrap ${
-                      activeRPOTab === 'naphthenic'
-                        ? 'text-[#DAA520] border-b-2 border-[#DAA520]'
-                        : 'text-gray-500 hover:text-[#DAA520]'
-                    }`}
-                  >
-                    Naphthenic RPO
-                  </button>
-                </nav>
-              </div>
-
-              <div className="p-8">
-                {activeRPOTab === 'aromatic' && (
-                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                    <div>
-                      <h4 className="text-2xl font-bold text-[#DAA520] mb-4">Aromatic RPO</h4>
-                      <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                        High aromatic content rubber process oil ideal for tire manufacturing and rubber compounds requiring enhanced grip and durability.
-                      </p>
-                      <ul className="space-y-3 text-gray-700">
-                        <li className="flex items-start">
-                          <i className="ri-check-line text-[#DAA520] mt-1 mr-3 w-4 h-4 flex items-center justify-center"></i>
-                          <span>Excellent compatibility with SBR and natural rubber</span>
-                        </li>
-                        <li className="flex items-start">
-                          <i className="ri-check-line text-[#DAA520] mt-1 mr-3 w-4 h-4 flex items-center justify-center"></i>
-                          <span>Enhanced traction and wet grip performance</span>
-                        </li>
-                        <li className="flex items-start">
-                          <i className="ri-check-line text-[#DAA520] mt-1 mr-3 w-4 h-4 flex items-center justify-center"></i>
-                          <span>Superior processing characteristics</span>
-                        </li>
-                        <li className="flex items-start">
-                          <i className="ri-check-line text-[#DAA520] mt-1 mr-3 w-4 h-4 flex items-center justify-center"></i>
-                          <span>Optimal for high-performance tire applications</span>
-                        </li>
-                      </ul>
-                    </div>
-                    <div>
-                      <img
-                        src="https://readdy.ai/api/search-image?query=Aromatic%20rubber%20process%20oil%20in%20industrial%20drums%20for%20tire%20manufacturing%2C%20dark%20colored%20RPO%20oil%20for%20rubber%20industry%2C%20tire%20production%20facility%20with%20rubber%20processing%20equipment%2C%20automotive%20tire%20manufacturing%20plant&width=500&height=400&seq=aromatic-rpo-oil&orientation=landscape"
-                        alt="Aromatic RPO Oil"
-                        className="w-full h-80 object-cover object-top rounded-xl shadow-lg hover:rotate-2 hover:scale-105 transition-all duration-500"
-                      />
-                    </div>
+            {/* Key Benefits Summary - Moved after Lithium Grease Section */}
+            <div className="mt-16 bg-gradient-to-br from-[#DAA520] to-[#B8860B] rounded-xl p-8 shadow-lg">
+              <h5 className="text-xl font-bold text-white mb-6 text-center">Key Benefits of RPO</h5>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i className="ri-settings-line text-white text-2xl w-6 h-6 flex items-center justify-center"></i>
                   </div>
-                )}
-
-                {activeRPOTab === 'paraffinic' && (
-                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                    <div>
-                      <h4 className="text-2xl font-bold text-[#DAA520] mb-4">Paraffinic RPO</h4>
-                      <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                        Low aromatic, high paraffinic content oil offering excellent oxidation stability and low temperature performance for specialized rubber applications.
-                      </p>
-                      <ul className="space-y-3 text-gray-700">
-                        <li className="flex items-start">
-                          <i className="ri-check-line text-[#DAA520] mt-1 mr-3 w-4 h-4 flex items-center justify-center"></i>
-                          <span>Excellent oxidation and thermal stability</span>
-                        </li>
-                        <li className="flex items-start">
-                          <i className="ri-check-line text-[#DAA520] mt-1 mr-3 w-4 h-4 flex items-center justify-center"></i>
-                          <span>Superior low temperature flexibility</span>
-                        </li>
-                        <li className="flex items-start">
-                          <i className="ri-check-line text-[#DAA520] mt-1 mr-3 w-4 h-4 flex items-center justify-center"></i>
-                          <span>Ideal for light-colored rubber products</span>
-                        </li>
-                        <li className="flex items-start">
-                          <i className="ri-check-line text-[#DAA520] mt-1 mr-3 w-4 h-4 flex items-center justify-center"></i>
-                          <span>Excellent processing and mixing properties</span>
-                        </li>
-                      </ul>
-                    </div>
-                    <div>
-                      <img
-                        src="https://readdy.ai/api/search-image?query=Paraffinic%20rubber%20process%20oil%20in%20clean%20industrial%20containers%2C%20light%20colored%20RPO%20oil%20for%20specialized%20rubber%20manufacturing%2C%20modern%20rubber%20processing%20facility%20with%20advanced%20equipment%2C%20clean%20industrial%20environment&width=500&height=400&seq=paraffinic-rpo-oil&orientation=landscape"
-                        alt="Paraffinic RPO Oil"
-                        className="w-full h-80 object-cover object-top rounded-xl shadow-lg hover:rotate-2 hover:scale-105 transition-all duration-500"
-                      />
-                    </div>
+                  <h6 className="font-semibold text-white mb-2">Processing Aid</h6>
+                  <p className="text-white/90 text-sm">Reduces viscosity for easier processing and molding</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i className="ri-drop-line text-white text-2xl w-6 h-6 flex items-center justify-center"></i>
                   </div>
-                )}
-
-                {activeRPOTab === 'naphthenic' && (
-                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                    <div>
-                      <h4 className="text-2xl font-bold text-[#DAA520] mb-4">Naphthenic RPO</h4>
-                      <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                        Balanced composition oil providing excellent solvency and compatibility with various rubber compounds, ideal for general purpose applications.
-                      </p>
-                      <ul className="space-y-3 text-gray-700">
-                        <li className="flex items-start">
-                          <i className="ri-check-line text-[#DAA520] mt-1 mr-3 w-4 h-4 flex items-center justify-center"></i>
-                          <span>Excellent solvency for rubber additives</span>
-                        </li>
-                        <li className="flex items-start">
-                          <i className="ri-check-line text-[#DAA520] mt-1 mr-3 w-4 h-4 flex items-center justify-center"></i>
-                          <span>Good compatibility with various rubber types</span>
-                        </li>
-                        <li className="flex items-start">
-                          <i className="ri-check-line text-[#DAA520] mt-1 mr-3 w-4 h-4 flex items-center justify-center"></i>
-                          <span>Balanced performance characteristics</span>
-                        </li>
-                        <li className="flex items-start">
-                          <i className="ri-check-line text-[#DAA520] mt-1 mr-3 w-4 h-4 flex items-center justify-center"></i>
-                          <span>Versatile for multiple rubber applications</span>
-                        </li>
-                      </ul>
-                    </div>
-                    <div>
-                      <img
-                        src="https://readdy.ai/api/search-image?query=Naphthenic%20rubber%20process%20oil%20in%20industrial%20storage%20tanks%2C%20medium%20colored%20RPO%20oil%20for%20general%20rubber%20applications%2C%20versatile%20rubber%20processing%20facility%2C%20balanced%20petrochemical%20processing%20equipment&width=500&height=400&seq=naphthenic-rpo-oil&orientation=landscape"
-                        alt="Naphthenic RPO Oil"
-                        className="w-full h-80 object-cover object-top rounded-xl shadow-lg hover:rotate-2 hover:scale-105 transition-all duration-500"
-                      />
-                    </div>
+                  <h6 className="font-semibold text-white mb-2">Plasticizer</h6>
+                  <p className="text-white/90 text-sm">Improves flexibility and workability of rubber compounds</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i className="ri-bubble-chart-line text-white text-2xl w-6 h-6 flex items-center justify-center"></i>
                   </div>
-                )}
+                  <h6 className="font-semibold text-white mb-2">Filler Dispersion</h6>
+                  <p className="text-white/90 text-sm">Enhances distribution of fillers and additives</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i className="ri-water-flash-line text-white text-2xl w-6 h-6 flex items-center justify-center"></i>
+                  </div>
+                  <h6 className="font-semibold text-white mb-2">Softening Agent</h6>
+                  <p className="text-white/90 text-sm">Acts as softener in rubber compound production</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i className="ri-flask-line text-white text-2xl w-6 h-6 flex items-center justify-center"></i>
+                  </div>
+                  <h6 className="font-semibold text-white mb-2">Diluent</h6>
+                  <p className="text-white/90 text-sm">Functions as carrier fluid and diluent</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i className="ri-oil-line text-white text-2xl w-6 h-6 flex items-center justify-center"></i>
+                  </div>
+                  <h6 className="font-semibold text-white mb-2">Lubricant</h6>
+                  <p className="text-white/90 text-sm">Provides lubrication during rubber processing</p>
+                </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>
